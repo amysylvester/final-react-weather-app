@@ -38,6 +38,7 @@ export default function Weather(props) {
                 type="search"
                 placeholder="Enter a City..."
                 className="form-control"
+                autoFocus="on"
               />
             </div>
             <div className="col-3">
