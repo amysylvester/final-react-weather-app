@@ -57,7 +57,7 @@ export default function Weather(props) {
               </div>
               <div className="col-md-6 temp">
                 <div className="card-body">
-                  <h2 className="card-title">
+                  <h3 className="card-title">
                     Today
                     <div>
                       <span>{Math.round(weatherData.temperature)}</span>
@@ -77,7 +77,7 @@ export default function Weather(props) {
                       </li>
                       <em>{weatherData.timestamp}</em>
                     </ul>
-                  </h2>
+                  </h3>
                 </div>
               </div>
             </div>

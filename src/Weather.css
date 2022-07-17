@@ -1,1 +1,59 @@
+h1 {
+  font-size: 60px;
+  max-width: 400px;
+  padding-bottom: 25px;
+  text-align: center;
+  padding: 0 0 10px 0;
+  margin: auto;
+}
 
+form {
+  margin: auto;
+  padding: 6px 6px 4px 9px;
+  border: 0;
+  border-radius: 3px;
+  font-size: 17px;
+  width: 85%;
+}
+
+h2 {
+  font-size: 45px;
+  padding: 18px;
+  color: #212529;
+  text-align: center;
+  margin: auto;
+}
+
+h3 {
+  color: #212529;
+  font-size: 45px;
+  margin: auto;
+}
+
+em {
+  color: gray;
+  font-size: 12px;
+}
+
+.Today .row {
+  flex-wrap: unset;
+}
+
+img {
+  width: 50%;
+}
+
+ul {
+  color: #6e88a1;
+  font-size: 20px;
+  padding: 10px 0px 0px 0px;
+  text-transform: capitalize;
+  list-style: none;
+}
+
+.units {
+  font-size: 20px;
+  position: relative;
+  text-decoration: none;
+  top: -4.5px;
+}

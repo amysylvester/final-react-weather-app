@@ -1,1 +1,30 @@
+.App {
+  margin: auto;
+  border-radius: 10px;
+  max-width: 750px;
+  padding: 30px;
+}
 
+body {
+  background: linear-gradient(
+    180.3deg,
+    rgb(221, 221, 221) 5.5%,
+    rgb(110, 136, 161) 90.2%
+  );
+  display: block;
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 15px;
+}
+
+.container {
+  border-radius: 10px;
+  max-width: 750px;
+  padding: 30px;
+  display: block;
+  margin: auto;
+}
+
+.card-text {
+  color: #212529;
+  font-size: 20px;
+}
