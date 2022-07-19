@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import FormattedTimestamp from "./FormattedTimestamp";
 import axios from "axios";
 import "./Weather.css";
 
@@ -8,7 +9,7 @@ export default function Weather(props) {
     console.log(response.data);
     setWeatherData({
       ready: true,
-      timestamp: "Sunday 01:38",
+      timestamp: new Date(response.data.dt * 1000),
       temperature: response.data.main.temp,
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
@@ -77,7 +78,11 @@ export default function Weather(props) {
                       <li>
                         Wind: <span>{weatherData.wind}</span>km/h
                       </li>
-                      <em>{weatherData.timestamp}</em>
+                      <em>
+                        <FormattedTimestamp
+                          date={weatherData.timestamp}
+                        ></FormattedTimestamp>
+                      </em>
                     </ul>
                   </h3>
                 </div>
