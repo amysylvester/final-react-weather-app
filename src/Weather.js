@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import FormattedTimestamp from "./FormattedTimestamp";
+import WeatherInfo from "./WeatherInfo";
 import axios from "axios";
 import "./Weather.css";
 
@@ -48,48 +48,7 @@ export default function Weather(props) {
             </div>
           </div>
         </form>
-        <h2>{weatherData.city}</h2>
-        <div className="Today">
-          <div className="card mb-3">
-            <div className="row no-gutters">
-              <div className="col-md-6 today-weather">
-                <img
-                  src="{weatherData.iconUrl}"
-                  alt="{weatherData.description}"
-                />
-              </div>
-              <div className="col-md-6 temp">
-                <div className="card-body">
-                  <h3 className="card-title">
-                    Today
-                    <div>
-                      <span>{Math.round(weatherData.temperature)}</span>
-                      <span className="units">°F</span>
-                    </div>
-                    <ul>
-                      <li>
-                        <span className="text-capitalize">
-                          {weatherData.description}
-                        </span>
-                      </li>
-                      <li>
-                        Humidity: <span>{weatherData.humidity}</span>%
-                      </li>
-                      <li>
-                        Wind: <span>{weatherData.wind}</span>km/h
-                      </li>
-                      <em>
-                        <FormattedTimestamp
-                          date={weatherData.timestamp}
-                        ></FormattedTimestamp>
-                      </em>
-                    </ul>
-                  </h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <WeatherInfo data={weatherData} />
       </div>
     );
   } else {
