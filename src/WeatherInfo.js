@@ -4,7 +4,7 @@ import FormattedTimestamp from "./FormattedTimestamp";
 export default function WeatherInfo(props) {
   return (
     <div className="WeatherInfo">
-      <h2>{props.weatherData.city}</h2>
+      <h2>{props.data.city}</h2>
       <div className="Today">
         <div className="card mb-3">
           <div className="row no-gutters">
@@ -19,24 +19,24 @@ export default function WeatherInfo(props) {
                 <h3 className="card-title">
                   Today
                   <div>
-                    <span>{Math.round(props.weatherData.temperature)}</span>
+                    <span>{Math.round(props.data.temperature)}</span>
                     <span className="units">°F</span>
                   </div>
                   <ul>
                     <li>
                       <span className="text-capitalize">
-                        {props.weatherData.description}
+                        {props.data.description}
                       </span>
                     </li>
                     <li>
-                      Humidity: <span>{props.weatherData.humidity}</span>%
+                      Humidity: <span>{props.data.humidity}</span>%
                     </li>
                     <li>
-                      Wind: <span>{props.weatherData.wind}</span>km/h
+                      Wind: <span>{props.data.wind}</span>km/h
                     </li>
                     <em>
                       <FormattedTimestamp
-                        date={props.weatherData.timestamp}
+                        date={props.data.timestamp}
                       ></FormattedTimestamp>
                     </em>
                   </ul>
