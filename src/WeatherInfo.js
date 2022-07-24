@@ -9,10 +9,7 @@ export default function WeatherInfo(props) {
         <div className="card mb-3">
           <div className="row no-gutters">
             <div className="col-md-6 today-weather">
-              <img
-                src="{weatherData.iconUrl}"
-                alt="{weatherData.description}"
-              />
+              <img src={props.data.iconUrl} alt={props.data.description} />
             </div>
             <div className="col-md-6 temp">
               <div className="card-body">
