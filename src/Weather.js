@@ -41,9 +41,9 @@ export default function Weather(props) {
           <div className="row">
             <div className="col">
               <img
-                src="images/eye/icons8-surprise-500.svg"
+                src="src/images/eye/icons8-surprise-500.svg"
                 className="eye"
-                alt=""
+                alt="eye-logo"
               />
             </div>
             <div className="col">
