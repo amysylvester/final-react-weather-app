@@ -16,6 +16,11 @@ form {
   width: 85%;
 }
 
+.btn {
+  background-color: #6e88a1;
+  color: white;
+}
+
 h2 {
   font-size: 45px;
   padding: 18px;
@@ -49,11 +54,4 @@ ul {
   padding: 10px 0px 0px 0px;
   text-transform: capitalize;
   list-style: none;
-}
-
-.units {
-  font-size: 20px;
-  position: relative;
-  text-decoration: none;
-  top: -15.5px;
 }
