@@ -15,7 +15,8 @@ export default function Weather(props) {
       humidity: response.data.main.humidity,
       city: response.data.name,
       description: response.data.weather[0].description,
-      icon: response.data.weather[0].icon,
+      //icon: response.data.weather[0].icon,
+      iconUrl: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
     });
   }
 
@@ -40,11 +41,7 @@ export default function Weather(props) {
         <h1>
           <div className="row">
             <div className="col">
-              <img
-                src="src/images/eye/icons8-surprise-500.svg"
-                className="eye"
-                alt="eye-logo"
-              />
+              <img src="" className="eye" alt="" />
             </div>
             <div className="col">
               on the <br />
