@@ -1,5 +1,6 @@
 import React from "react";
 import WeatherIcon from "./WeatherIcon";
+import TodayTemperature from "./TodayTemperature";
 import FormattedTimestamp from "./FormattedTimestamp";
 
 export default function WeatherInfo(props) {
@@ -22,8 +23,7 @@ export default function WeatherInfo(props) {
                 <h3 className="card-title">
                   Today
                   <div>
-                    <span>{Math.round(props.data.temperature)}</span>
-                    <span className="units">°C</span>
+                    <TodayTemperature celsius={props.data.temperature} />
                   </div>
                   <ul>
                     <li>
