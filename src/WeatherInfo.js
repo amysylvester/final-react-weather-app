@@ -1,6 +1,7 @@
 import React from "react";
 import TodayTemperature from "./TodayTemperature";
 import FormattedTimestamp from "./FormattedTimestamp";
+import WeatherIcon from "./WeatherIcon";
 
 export default function WeatherInfo(props) {
   return (
@@ -11,7 +12,10 @@ export default function WeatherInfo(props) {
           <div className="row no-gutters">
             <div className="col-md-6">
               <div className="today-weather-icon">
-                <img src={props.data.iconUrl} alt={props.data.description} />
+                <WeatherIcon
+                  iconCode={props.data.icon}
+                  alt={props.data.description}
+                />
               </div>
             </div>
             <div className="col-md-6 temp">
