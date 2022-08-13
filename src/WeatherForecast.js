@@ -16,7 +16,7 @@ export default function WeatherForecast(props) {
     return (
       <div className="WeatherForecast">
         <div className="card-group">
-          <WeatherForecastDay />
+          <WeatherForecastDay data={forecast[0]} />
         </div>
       </div>
     );
