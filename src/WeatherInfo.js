@@ -23,7 +23,7 @@ export default function WeatherInfo(props) {
                 <h3 className="card-title">
                   Today
                   <div>
-                    <TodayTemperature celsius={props.data.temperature} />
+                    <TodayTemperature imperial={props.data.temperature} />
                   </div>
                   <ul>
                     <li>
