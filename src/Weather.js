@@ -42,7 +42,7 @@ export default function Weather(props) {
         <h1>
           <div className="row">
             <div className="col">
-              <img src="" className="eye" alt="" />
+              <img src="/images/icons/eye.png" className="eye" alt="" />
             </div>
             <div className="col">
               on the <br />
