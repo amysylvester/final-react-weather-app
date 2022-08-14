@@ -1,0 +1,11 @@
+.Forecast-Card {
+  margin: 3px;
+  text-align: center;
+}
+.WeatherForecast-temp {
+  color: #6e88a1;
+}
+
+.WeatherForecast-day {
+  font-size: 16pt;
+}

@@ -33,9 +33,9 @@ export default function TodayTemperature(props) {
         <span className="temperature">{Math.round(celsius)}</span>
         <span className="unit">
           <a href="/" onClick={showFahrenheit}>
-            °C
+            °F
           </a>
-          | °F
+          | °C
         </span>
       </div>
     );
