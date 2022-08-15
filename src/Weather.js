@@ -40,15 +40,7 @@ export default function Weather(props) {
     return (
       <div className="Weather">
         <h1>
-          <div className="row">
-            <div className="col">
-              <img src="/images/icons/eye.png" className="eye" alt="" />
-            </div>
-            <div className="col">
-              on the <br />
-              SKY
-            </div>
-          </div>
+          <div className="row">SKYwatch Weather</div>
         </h1>
         <form onSubmit={handleSubmit}>
           <div className="row">
