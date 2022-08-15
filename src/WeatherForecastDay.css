@@ -1,6 +1,7 @@
 .Forecast-Card {
   margin: 3px;
   text-align: center;
+  padding: 10pt 0pt 0pt 0pt;
 }
 .WeatherForecast-temp {
   color: #6e88a1;
