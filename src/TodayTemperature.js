@@ -4,9 +4,9 @@ import "./TodayTemperature.css";
 export default function TodayTemperature(props) {
   const [unit, setUnit] = useState("imperial");
 
-  function showFahrenheit(event) {
+  function showImperial(event) {
     event.preventDefault();
-    setUnit("fahrenheit");
+    setUnit("imperial");
   }
 
   function showCelsius(event) {
@@ -14,27 +14,33 @@ export default function TodayTemperature(props) {
     setUnit("celsius");
   }
 
+  function celsius() {
+    return (props.imperial - 32) * (5 / 9);
+  }
+
   if (unit === "imperial") {
     return (
       <div className="TodayTemperature">
         <span className="temperature">{Math.round(props.imperial)}</span>
         <span className="unit">
+          {" "}
           °F |
           <a href="/" onClick={showCelsius}>
+            {" "}
             °C
           </a>
         </span>
       </div>
     );
   } else {
-    let celsius = (5 / 9) * (props.imperial - 32);
     return (
       <div className="TodayTemperature">
-        <span className="temperature">{Math.round(celsius)}</span>
+        <span className="temperature">{Math.round(celsius())}</span>
         <span className="unit">
-          <a href="/" onClick={showFahrenheit}>
+          <a href="/" onClick={showImperial}>
+            {" "}
             °F
-          </a>
+          </a>{" "}
           | °C
         </span>
       </div>
