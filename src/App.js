@@ -15,7 +15,7 @@ export default function App() {
             rel="noopener noreferrer"
           >
             open-sourced on GitHub
-          </a>
+          </a>{" "}
           and{" "}
           <a
             href="https://celadon-brioche-c77b45.netlify.app"
