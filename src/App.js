@@ -9,7 +9,6 @@ export default function App() {
         <Weather defaultCity="New York" />
         <footer>
           This project was coded by Amy C Sylvester and is{" "}
-         
           <a
             href="https://github.com/amysylvester/final-react-weather-app"
             target="_blank"
@@ -17,8 +16,6 @@ export default function App() {
           >
             open-sourced on GitHub
           </a>
-            open-sourced on GitHub
-          </a>{" "}
           and{" "}
           <a
             href="https://celadon-brioche-c77b45.netlify.app"
